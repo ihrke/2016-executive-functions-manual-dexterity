@@ -2,13 +2,20 @@
 
 [![DOI](https://zenodo.org/badge/19634/ihrke/2016-executive-functions-manual-dexterity.svg)](https://zenodo.org/badge/latestdoi/19634/ihrke/2016-executive-functions-manual-dexterity)
 
-This repository will contain data and analyses for the paper "Association between executive functions, working memory, and manual dexterity in young and healthy older adults: An exploratory study" once the study is accepted for publication.
+This repository contains data and analyses for the paper "Association between executive functions, working memory, and manual dexterity in young and healthy older adults: An exploratory study".
 
 If you want to use this data/analysis in a research publication,
 please cite our paper.
 
+Rodriguez-Aranda, C., Mittner, M. & Vasylenko, O. (accepted). Association between Executive Functions, Working Memory, and Manual Dexterity in Young and Healthy Older Adults: An exploratory study. *Perceptual & Motor Skills*.
+
 ~~~{bibtex}
-@article{
+@article{Rodriguez-Aranda2016,
+  author={Rodriguez-Aranda, C and Mittner, M and Vasylenko, O},
+  title={Association between Executive Functions, Working Memory, and Manual
+    Dexterity in Young and Healthy Older Adults: An exploratory study},
+  year=2016,
+  journal={Perceptual \& Motor Skills}
 }
 ~~~
 
@@ -23,7 +30,7 @@ needed packages with very few commands.
 
 1. download `anaconda` or `miniconda`
 
- e.g. on linux: 
+ e.g. on linux:
  ~~~{bash}
  wget https://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh
  bash Miniconda-latest-Linux-x86_64.sh
@@ -45,7 +52,7 @@ needed packages with very few commands.
 
 If you are not willing to do this, you will have to look at the
 [environment.yml](./environment.yml) file to check all
-dependencies. 
+dependencies.
 
 ## Setup
 
@@ -68,7 +75,7 @@ details).
 
 ### Cognitive results
 
-stored in variable `cognitive` 
+stored in variable `cognitive`
 
 ~~~
 > summary(cognitive)
@@ -80,7 +87,7 @@ stored in variable `cognitive`
  Mean   :14.7   Mean   :28.80   Mean   : 4.30   Mean   : 7.767     Mean   : 6.133     Mean   : 98.23   Mean   :67.73  
  3rd Qu.:17.0   3rd Qu.:30.00   3rd Qu.: 6.75   3rd Qu.: 9.000     3rd Qu.: 7.000     3rd Qu.:103.00   3rd Qu.:74.50  
  Max.   :20.0   Max.   :30.00   Max.   :11.00   Max.   :13.000     Max.   :10.000     Max.   :119.00   Max.   :84.00  
-                                                                                                                      
+
    Stroop_WC       Trail_M_A       Trail_M_B      Dynamo_Høyrehånd Dynamo_Venstrehånd   Handedness   
  Min.   :20.00   Min.   :13.00   Min.   : 31.50   Min.   :15.33    Min.   :13.83      Min.   :12.00  
  1st Qu.:29.75   1st Qu.:18.50   1st Qu.: 43.38   1st Qu.:25.75    1st Qu.:22.33      1st Qu.:19.25  
@@ -120,10 +127,10 @@ Are in two separate variables for the two tasks:
 
 ~~~
 
-- `action` codes the movement type 
+- `action` codes the movement type
 - `object` are different types of objects (in the complex assembly
   task)
-- `repetition` is the index of the repetition for each subject 
+- `repetition` is the index of the repetition for each subject
 - `time` is the movement time for each of the actions in ms
 
 ### kinematics
@@ -193,9 +200,8 @@ The first two lines in each file
 library(ProjectTemplate)
 load.project()
 ~~~
-convert the raw data into a more convenient format by 
+convert the raw data into a more convenient format by
 
 1. running the `data/<dataset>.R` file
 2. running the preprocessing scripts in `munge`
 3. loading the convenience functions in `lib`
-
