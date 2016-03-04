@@ -4,6 +4,8 @@
 
 This repository contains data and analyses for the paper "Association between executive functions, working memory, and manual dexterity in young and healthy older adults: An exploratory study".
 
+[http://pms.sagepub.com/content/122/1/165.abstract](http://pms.sagepub.com/content/122/1/165.abstract)
+
 If you want to use this data/analysis in a research publication,
 please cite our paper.
 
